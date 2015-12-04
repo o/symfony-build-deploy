@@ -45,9 +45,17 @@ Clear cache
 
     /usr/bin/php app/console cache:clear --env=prod --no-debug
     
+For Symfony3
+
+    /usr/bin/php bin/console cache:clear --env=prod --no-debug
+    
 Dump your assets (If you need)
     
     /usr/bin/php app/console assetic:dump --env=prod --no-debug
+    
+For Symfony3
+
+    /usr/bin/php bin/console assetic:dump --env=prod --no-debug
     
 Give necesssary permissions (in this example, www-data belongs to nginx)
 
