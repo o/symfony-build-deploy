@@ -1,4 +1,4 @@
-## Symfony2 build and deployment 
+## Symfony2, Symfony3 build and deployment best practices 
 
 #### Upload your code to the production server
 
