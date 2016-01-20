@@ -59,6 +59,10 @@ For Symfony3
     
 Executes (or dumps) the SQL needed to update the database schema to match the current mapping metadata.
 
+    /usr/bin/php app/console doctrine:schema:update --force
+    
+For Symfony3
+
     /usr/bin/php bin/console doctrine:schema:update --force
     
 Give necesssary permissions (in this example, www-data belongs to nginx)
