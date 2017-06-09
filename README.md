@@ -73,7 +73,9 @@ Finally, symlink release folder to web server root
 
     ln -sf "/path/to/release/folder/${GIT_REPOSITORY}-${TAG_NAME}" "/var/www/${GIT_REPOSITORY}"
 
-If you use op-code cache, restart `php5-fpm` for invalidating cache every release.
+If you use op-code cache with `php-fpm`, restart `php5-fpm` for invalidating cache every release. If you're using Apache with `mod_php`, you should restart it.
+
+** Don't forget to disable op-code cache on CLI interface using opcache.enable_cli (in php.ini) configuration option to prevent inconsistent results. **
 
 #### Notes on deploying to multiple servers:
 
