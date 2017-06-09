@@ -75,7 +75,7 @@ Finally, symlink release folder to web server root
 
 If you use op-code cache with `php-fpm`, restart `php5-fpm` for invalidating cache every release. If you're using Apache with `mod_php`, you should restart it.
 
-** Don't forget to disable op-code cache on CLI interface using opcache.enable_cli (in php.ini) configuration option to prevent inconsistent results. **
+*Don't forget to disable op-code cache on CLI interface using opcache.enable_cli (in php.ini) configuration option to prevent inconsistent results. You can check quickly with `$ php -i | grep opcache.enable`*
 
 #### Notes on deploying to multiple servers:
 
